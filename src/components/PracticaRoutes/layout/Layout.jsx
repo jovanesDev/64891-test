@@ -1,14 +1,16 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import {Outlet} from 'react-router-dom'
+import { Outlet } from "react-router-dom";
+import GlobalProvider from "../provider/GlobalProvider";
 
 const WithNavbarAndFooter = () => {
   return (
     <>
-      <Navbar />
-        <Outlet/>
-      <Footer />
+      <GlobalProvider>
+        <Navbar />
+           <Outlet />
+        <Footer />
+      </GlobalProvider>
     </>
 
     // aca van components y outlet

@@ -1,6 +1,7 @@
 // import PracticaJs from "./components/PracticaJs"
 
-import PracticaRoutes from "./components/PracticaRoutes/PracticaRoutes"
+import PracticaRoutes from "./components/PracticaRoutes/routes/PracticaRoutes"
+
 
 function App() {
   return (
